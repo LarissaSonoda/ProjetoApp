@@ -1,0 +1,55 @@
+﻿@model ProjetoApp.Models.Usuario
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Dados do usuário</h2>
+<fieldset>
+    <legend>Dados do usuário</legend>
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Observacao)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Observacao)
+    </div>
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Idade)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Idade)
+    </div>
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Login)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Login)
+    </div>
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.Senha)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Senha)
+    </div>
+    <div class="editor-label">
+        @Html.DisplayNameFor(model => model.ConfSenha)
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.ConfSenha)
+    </div>
+    <p>@Html.ActionLink("Voltar", "Index")</p>
+</fieldset>
+
+
+
